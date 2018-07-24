@@ -4,6 +4,7 @@ backend:
 
 media_folder: static/img
 public_folder: /img
+publish_mode: editorial_workflow
 
 collections:
   - name: "blog"
@@ -15,9 +16,27 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
+  
+  - name: "podcast"
+    label: "podcast"
+    folder: "src/pages/podcast"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "podcast-post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Content", name: "thumbnail", widget: "markdown"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list"}
+  
+  
 
   - name: "pages"
     label: "Pages"
