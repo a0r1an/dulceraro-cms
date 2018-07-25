@@ -10,6 +10,6 @@ description: >-
 tags:
   - hyper future show
 ---
-<iframe allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/geAFO-V6OyU"></iframe>
+<iframe allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/Z11_2HT9z2E"></iframe>
 
 <p>In this episode the Eufracio Bros talk about some of the pivitol people in our life, DBZ villains. From Raditz to Buu. We go deep and uncover some of our raw feelings like why is Buu so cute and is Frieza a girl or boy.</p>
