@@ -1,18 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import WebFont from 'webfontloader';
 
 import Navbar from '../components/Navbar'
 import Header from '../components/Header'
 import Navigation from '../components/Navigation'
 import './all.sass'
+if (typeof window !== "undefined") {
+  var WebFont = require('webfontloader');
+  WebFont.load({
+    google: {
+      families: ['Montserrat:400,500,700,800,900']
+    }
+  });
+}
 
-WebFont.load({
-  google: {
-    families: ['Montserrat:400,500,700,800,900']
-  }
-});
 
 const TemplateWrapper = ({ children }) => (
   <div style={{ fontFamily: `Montserrat` }}>
