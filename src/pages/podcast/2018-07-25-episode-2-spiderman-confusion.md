@@ -1,6 +1,6 @@
 ---
 templateKey: podcast-post
-title: 'Episode 2 : Spiderman Confusion'
+title: 'HYPER FUTURE SHOW Episode 2 : Spiderman Confusion'
 date: '2018-07-25T12:50:25-07:00'
 thumbnail: /img/512.jpg
 description: >-
