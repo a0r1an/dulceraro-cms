@@ -31,6 +31,8 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Content", name: "featuredContent", widget: "markdown"}
+      - {label: "Podcast Player", name: "podcastPlayer", widget: "markdown"}
+      - {label: "Video Player", name: "videoPlayer", widget: "markdown"}
       - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
