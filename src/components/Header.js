@@ -2,7 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 
 const Title = styled.h1`
-  font-size: 2.5em;
+  font-size: 1.75em;
   text-align: center;
   font-weight: 900;
   margin: 0;
@@ -18,6 +18,10 @@ const Link = ({ className, children }) => (
 const StyledLink = styled(Link)`
   color: #ea40dc;
   text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    color: black;
+  }
 `;
 class Header extends React.Component {
   render() {
