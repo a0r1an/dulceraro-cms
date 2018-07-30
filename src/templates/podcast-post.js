@@ -8,12 +8,14 @@ import Content, { HTMLContent } from '../components/Content'
 export const BlogPostTemplate = ({
   content,
   contentComponent,
-  description,
   tags,
   title,
   helmet,
+  featuredContent,
+  featuredContentComponent
 }) => {
   const PostContent = contentComponent || Content
+  const PodcastPlayer = featuredContentComponent || Content
 
   return (
     <section className="section">
@@ -22,7 +24,9 @@ export const BlogPostTemplate = ({
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
+            {/* {featuredContent} */}
             <PostContent content={content} />
+            <PodcastPlayer content={featuredContent} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
@@ -45,6 +49,8 @@ BlogPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
+  featuredContent: PropTypes.string,
+  featuredContentComponent: PropTypes.func,
   helmet: PropTypes.instanceOf(Helmet),
 }
 
@@ -58,6 +64,8 @@ const BlogPost = ({ data }) => {
       helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
+      featuredContent={post.frontmatter.featuredContent}
+      featuredContentComponent={HTMLContent}
     />
   )
 }
@@ -79,6 +87,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         tags
+        featuredContent
       }
     }
   }
