@@ -6,21 +6,110 @@ $kaldi-red-invert: #fff
 
 $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
+body
+  margin: 0;
+  overflow-x: hidden;
+h3
+  margin: 0;
+  font-size: 1.25em;
+h4
+  margin: 0;
+  padding: 0;
 
-.content .taglist
+p
+  margin: 0;
+
+ul
+  margin: 0;
+  padding: 0;
+
+img
+  max-width: 100%;
+
+a
+  text-decoration: none;
+  color: #ea40dc;
+  &:hover
+    text-decoration: underline;
+
+.container
+  margin: 20px auto 0;
+  max-width: 1200px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  @media (min-width: 800px)
+    justify-content: space-evenly;
+
+.container-content
+  margin-top: 40px;
+  flex-direction: column;
+  max-width: 800px;
+  p 
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 300;
+
+.tags
+  margin: 4rem 0 0;
+  text-align: center;
+
+.container .taglist
   list-style: none
-  margin-bottom: 0
-  margin-left: 0
-  margin-right: 1.5rem
-  margin-top: 1.5rem
-  display: flex
-  flex-wrap: wrap
-  justify-content: left
-  align-items: center
+  margin: 10px 0 0
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   li
-    padding: 0 2rem 1rem 0
+    padding: 0
     margin-bottom: 1.5rem
     margin-top: 0
+    text-transform: uppercase;
+
+
+.section-podcast
+  background: #f1f1f1;
+  padding: 0;
+  .container
+    padding: 20px;
+  h6
+    flex: 1 0 100%;
+    font-size: 1em;
+    text-align: center;
+
+.headlineContainer
+  margin: 0 0 20px;
+  text-align: center;
+  @media (min-width: 800px)
+    flex: 0 0 20%;
+  img
+    width: 64px;
+    display: block;
+    margin: 0 auto;
+
+.latestPodcast
+  display: flex;
+  flex-direction: column
+  @media (min-width: 800px)
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex: 0 0 80%;
+  .column
+    display: flex;
+    margin: 0 0 10px;
+    @media (min-width: 800px)
+      flex-direction: column;
+      flex: 0 1 250px;
+      img
+        width: 100%;
+  .imgContainer
+    flex: 0 0 auto;
+    margin: 0 10px 0 0;
+  h4
+    font-size: 1em;
+  img
+    width: 100px;
 
 // Helper Classes
 .full-width-image-container
@@ -39,4 +128,21 @@ $primary-invert: $kaldi-red-invert
 .margin-top-0
   margin-top: 0 !important
 
-@import "~bulma"
+.no-background 
+  background-color: transparent!important;
+
+
+.hero
+  background: -webkit-radial-gradient(center, ellipse cover, #a477ce 1%,#7700da 98%);
+  text-align: center;
+  height: 380px;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  img
+    margin: 0 auto 20px;
+  h1
+    color: #ffffff;
+    margin: 0;
+    padding: 0 25px;
+    text-transform: uppercase;

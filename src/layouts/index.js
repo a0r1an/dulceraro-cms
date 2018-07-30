@@ -10,7 +10,7 @@ if (typeof window !== "undefined") {
   var WebFont = require('webfontloader');
   WebFont.load({
     google: {
-      families: ['Montserrat:400,500,700,800,900']
+      families: ['Montserrat:200,300,400,500,700,800,900']
     }
   });
 }

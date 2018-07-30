@@ -11,38 +11,32 @@ export const BlogPostTemplate = ({
   description,
   tags,
   title,
-  thumbnail,
   helmet,
 }) => {
   const PostContent = contentComponent || Content
 
   return (
-    <div>
-      <section className="section hero">
+    <section className="section">
       {helmet || ''}
-        <img src={thumbnail} width="150" />
-        <h1 className="title is-size-2 has-text-weight-bold is-bold-light">{title}</h1>
-      </section>
-        
-      <section className="section">  
         <div className="container container-content">
-              {/* <p>{description}</p> */}
-              <PostContent content={content} />
-              {tags && tags.length ? (
-                <div className="tags">
-                  <h4>Tags</h4>
-                  <ul className="taglist">
-                    {tags.map(tag => (
-                      <li key={tag + `tag`}>
-                        <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ) : null}
-        </div>
-      </section>
-    </div>
+            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+              {title}
+            </h1>
+            <PostContent content={content} />
+            {tags && tags.length ? (
+              <div style={{ marginTop: `4rem` }}>
+                <h4>Tags</h4>
+                <ul className="taglist">
+                  {tags.map(tag => (
+                    <li key={tag + `tag`}>
+                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+          </div>
+    </section>
   )
 }
 
@@ -61,12 +55,9 @@ const BlogPost = ({ data }) => {
     <BlogPostTemplate
       content={post.html}
       contentComponent={HTMLContent}
-      description={post.frontmatter.description}
       helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
-      image={post.frontmatter.image}
-      thumbnail={post.frontmatter.thumbnail}
     />
   )
 }
@@ -80,15 +71,13 @@ BlogPost.propTypes = {
 export default BlogPost
 
 export const pageQuery = graphql`
-  query BlogPostByID($id: String!) {
+  query PodcastPostByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
       frontmatter {
-        thumbnail
         date(formatString: "MMMM DD, YYYY")
         title
-        description
         tags
       }
     }
