@@ -10,6 +10,7 @@ podcastPlayer: >-
 videoPlayer: >-
   <iframe allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0"
   src="https://www.youtube.com/embed/84WiLTPjm14"></iframe>
+thumbnail: /img/512.jpg
 description: >-
   In this episode the Eufracio Bros talk about Lion King, Bitcoin, Metro boomin,
   Mindhunters, GSP and Thor Ragnarok.
