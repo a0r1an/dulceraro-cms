@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import styled from 'styled-components';
+
 import logo from "..//img/podcast.png";
 
 
@@ -57,7 +58,7 @@ export default class IndexPage extends React.Component {
             .map(({ node: post }) => (
               <Card
                 className="content"
-                style={{backgroundSize: 'cover', background: 'url('+ post.frontmatter.thumbnail +') ' }}
+                style={{backgroundSize: 'cover', background: 'url('+ post.frontmatter.thumbnail +') center/cover' }}
                 key={post.id}
               >
                 <Link className="button is-small no-background" to={post.fields.slug} style={{position:'absolute',height: '100%',width:'100%',display: 'block'}}>
