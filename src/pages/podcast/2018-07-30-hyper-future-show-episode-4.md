@@ -10,6 +10,7 @@ podcastPlayer: >-
 videoPlayer: >-
   <iframe allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0"
   src="https://www.youtube.com/embed/1zvdAbed90M"></iframe>
+thumbnail: /img/512.jpg
 description: >-
   In this episode the Eufracio Bros talk about Super Mario Odyssey, Stranger
   Things Season 2, and Adrian's trip to disneyland.
