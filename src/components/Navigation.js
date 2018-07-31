@@ -38,9 +38,9 @@ class Navigation extends React.Component {
     return <Header>
       <StyledList>
         {/* <ListItem><Anchor href="/videos">MINIS</Anchor></ListItem> */}
-        <ListItem><Anchor href="/ficton">STORIES</Anchor></ListItem>
+        <ListItem><Anchor href="/stories">STORIES</Anchor></ListItem>
         <ListItem><Anchor href="/podcasts">PODCAST</Anchor></ListItem>
-        <ListItem><Anchor href="/store">STORE</Anchor></ListItem>
+        {/* <ListItem><Anchor href="/store">STORE</Anchor></ListItem> */}
       </StyledList>
     </Header>;
   }

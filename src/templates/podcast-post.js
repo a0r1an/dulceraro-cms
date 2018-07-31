@@ -12,10 +12,15 @@ export const BlogPostTemplate = ({
   title,
   helmet,
   featuredContent,
-  featuredContentComponent
+  featuredContentComponent,
+  videoPlayer,
+  videoPlayerComponent,
+  podcastPlayer,
+  podcastPlayerComponent
 }) => {
   const PostContent = contentComponent || Content
-  const PodcastPlayer = featuredContentComponent || Content
+  const PodcastPlayer = podcastPlayerComponent || Content
+  const VideoPlayer = videoPlayerComponent || Content
 
   return (
     <section className="section">
@@ -25,11 +30,16 @@ export const BlogPostTemplate = ({
               {title}
             </h1>
             {/* {featuredContent} */}
+            <div className="videoContainer">
+              <VideoPlayer content={videoPlayer} />
+            </div>
             <PostContent content={content} />
-            <PodcastPlayer content={featuredContent} />
+            <div className="podcastContainer">
+              <PodcastPlayer content={podcastPlayer} />
+            </div>
             {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
+              <div className="tags">
+              <h4>Tags</h4>
                 <ul className="taglist">
                   {tags.map(tag => (
                     <li key={tag + `tag`}>
@@ -51,6 +61,10 @@ BlogPostTemplate.propTypes = {
   title: PropTypes.string,
   featuredContent: PropTypes.string,
   featuredContentComponent: PropTypes.func,
+  podcastPlayer: PropTypes.string,
+  podcastPlayerComponent: PropTypes.func,
+  videoPlayer: PropTypes.string,
+  videoPlayerComponent: PropTypes.func,
   helmet: PropTypes.instanceOf(Helmet),
 }
 
@@ -66,6 +80,10 @@ const BlogPost = ({ data }) => {
       title={post.frontmatter.title}
       featuredContent={post.frontmatter.featuredContent}
       featuredContentComponent={HTMLContent}
+      podcastPlayer={post.frontmatter.podcastPlayer}
+      podcastPlayerComponent={HTMLContent}
+      videoPlayer={post.frontmatter.videoPlayer}
+      videoPlayerComponent={HTMLContent}
     />
   )
 }
@@ -88,6 +106,8 @@ export const pageQuery = graphql`
         title
         tags
         featuredContent
+        podcastPlayer
+        videoPlayer
       }
     }
   }
