@@ -12,10 +12,10 @@ videoPlayer: >-
   src="https://www.youtube.com/embed/Z11_2HT9z2E"></iframe>
 thumbnail: /img/512.jpg
 description: >-
-  In this episode the Eufracio Bros talk about some of the pivitol people in our
-  life, DBZ villains. From Raditz to Buu. We go deep and uncover some of our raw
-  feelings like why is Buu so cute and is Frieza a girl or boy.
+  Welcome to the first episode of the Hyper Future Show! Me(Adrian) and my
+  brother Ivan started this podcast to talk about things we love. Tech, Games,
+  Movies, Life, Sports. Today we talk about the Nintendo Gamecube.
 tags:
   - hyper future show
 ---
-<p>In this episode the Eufracio Bros talk about some of the pivitol people in our life, DBZ villains. From Raditz to Buu. We go deep and uncover some of our raw feelings like why is Buu so cute and is Frieza a girl or boy.</p>
+<p>Welcome to the first episode of the Hyper Future Show! Me(Adrian) and my brother Ivan started this podcast to talk about things we love. Tech, Games, Movies, Life, Sports. Today we talk about the Nintendo Gamecube.</p>
