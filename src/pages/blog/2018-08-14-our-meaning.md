@@ -44,7 +44,7 @@ The world can be a cruel place. It is filled with lies, hate, and sadness. It ha
 <br />
 
 These are our rules of order
-1. All Children, including yourself, our children of Benith.
+<p>1. All Children, including yourself, our children of Benith.
 <br />
 2. All Women shall tend to their Child until the age of 16. Nurturing, teaching, and raising these children to become pillars of our future societies.
 <br />
@@ -54,7 +54,7 @@ These are our rules of order
 <br />
 5. At the age of 18, girls become Women and are ready to bring a new child of Benith into this world. At the age of 18, boys will become Men and are ready to provide for our city and eventually for the world.
 <br />
-6. This cycle will repeat until Maxo arrives and he will reward us by making us, The First, the angels of Maxo. We will live in Joy.
+6. This cycle will repeat until Maxo arrives and he will reward us by making us, The First, the angels of Maxo. We will live in Joy.</p>
 
 <br />
 
