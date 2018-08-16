@@ -2,6 +2,7 @@
 templateKey: blog-post
 title: The Book Of Education
 date: '2018-08-14T16:52:24-07:00'
+thumbnail: /img/artwork.jpg
 description: >-
   Ray loved his mother, but he did not like her. It is a hard thing to explain,
   but when a child is raised in such a manner that Ray was raised, then it is
