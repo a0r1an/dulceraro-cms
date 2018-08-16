@@ -20,12 +20,12 @@ export const BlogPostTemplate = ({
     <div>
       <section className="section hero" style={{backgroundSize: 'cover', background: 'url('+ thumbnail +') center/cover' }}>
       {helmet || ''}
-        <img src={thumbnail} width="150" />
-        <h1 className="title is-size-2 has-text-weight-bold is-bold-light">{title}</h1>
       </section>
         
       <section className="section">  
         <div className="container container-content">
+      
+        <h1 className="title">{title}</h1>
               {/* <p>{description}</p> */}
               <PostContent content={content} />
               {tags && tags.length ? (
