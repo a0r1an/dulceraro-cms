@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Our Meaning
+title: The Book Of Education
 date: '2018-08-14T16:52:24-07:00'
 description: >-
   Ray loved his mother, but he did not like her. It is a hard thing to explain,
