@@ -18,7 +18,7 @@ export const BlogPostTemplate = ({
 
   return (
     <div>
-      <section className="section hero">
+      <section className="section hero" style={{backgroundSize: 'cover', background: 'url('+ thumbnail +') center/cover' }}>
       {helmet || ''}
         <img src={thumbnail} width="150" />
         <h1 className="title is-size-2 has-text-weight-bold is-bold-light">{title}</h1>
