@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: LARGE WHITE BOX
 date: '2018-08-06T17:46:11-07:00'
-thumbnail: /img/artwork.jpg
+thumbnail: /img/profile.png
 description: >-
   Our story takes place in a rather meaningless town called Mondane. A town that
   always seemed to have a tinge of grey to it. But there is something unique
