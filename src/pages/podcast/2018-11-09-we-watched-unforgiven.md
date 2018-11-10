@@ -1,23 +1,24 @@
 ---
 templateKey: podcast-post
 title: WE WATCHED UNFORGIVEN
-date: '2018-11-09T16:39:11-08:00'
+date: '2018-11-09T16:41:09-08:00'
 featuredContent: a
 podcastPlayer: >-
   <iframe width="100%" height="150" scrolling="no" frameborder="no"
   allow="autoplay"
-  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/523460229&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/526819113&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 videoPlayer: >-
-  <iframe src="https://www.youtube.com/embed/fid77pj-z0M" frameborder="0"
+  <iframe src="https://www.youtube.com/embed/XDfnunXhJD0" frameborder="0"
   allow="accelerometer; autoplay; encrypted-media; gyroscope;
   picture-in-picture" allowfullscreen></iframe>
 thumbnail: /img/512.jpg
 description: >-
-  The Eufracio Bros are back, on All Hollows Eve of all days! They are in the
-  Halloween spirit so they decided to watch The Conjuring. They talk scary
-  movies, what scares them, are ghosts even real and many other ideas that
-  sprout from their tiny brains. Enjoy!
+  Welcome back to another episode of HYPER FUTURE SHOW. In this episode the
+  Eufracio Bros talk about the movie, UNFORGIVEN! The 1992 Classic Western
+  directed by Clint Eastwood. We talk about the plot, the plot holes, the quotes
+  and what we want to see in a sequel. We are looking at you Bradley Cooper!
+  Enjoy  
 tags:
   - hyper future show
 ---
-<p>The Eufracio Bros are back, on All Hollows Eve of all days! They are in the Halloween spirit so they decided to watch The Conjuring. They talk scary movies, what scares them, are ghosts even real and many other ideas that sprout from their tiny brains. Enjoy!<p>
+<p>Welcome back to another episode of HYPER FUTURE SHOW. In this episode the Eufracio Bros talk about the movie, UNFORGIVEN! The 1992 Classic Western directed by Clint Eastwood. We talk about the plot, the plot holes, the quotes and what we want to see in a sequel. We are looking at you Bradley Cooper! Enjoy </p>
